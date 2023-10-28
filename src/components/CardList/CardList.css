@@ -1,0 +1,9 @@
+.wrapperList {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: 880px;
+  margin-top: 10px;
+}

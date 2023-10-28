@@ -1,0 +1,44 @@
+.wrapperCard {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  perspective: 800px;
+}
+.wrapperCardActive .card {
+  transform: rotateY(180deg);
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transition: transform 500ms;
+  transform-style: preserve-3d;
+}
+.front,
+.back {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+  background-image: url("https://st4.depositphotos.com/13324256/24812/i/600/depositphotos_248121780-stock-photo-top-view-blank-empty-sheets.jpg");
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aliceblue;
+  transform: rotateY(180deg);
+}
+
+.notVisible {
+  display: none;
+}
